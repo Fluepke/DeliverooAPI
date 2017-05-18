@@ -16,11 +16,4 @@ public class Client {
 		}
 		return this.client;
 	}
-	
-	public void dumpCookies() {
-		System.out.println("Cookies");
-		for (Cookie cookie : cookieStore.getCookies()) {
-			System.out.println(cookie.getName() + "=" + cookie.getValue());
-		}
-	}
 }

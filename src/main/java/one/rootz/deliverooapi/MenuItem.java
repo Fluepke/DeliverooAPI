@@ -23,10 +23,6 @@ public class MenuItem {
 		this.description = jsonObject.optString("description", "");
 		this.omitFromReceipts = jsonObject.getBoolean("omit_from_receipts");
 		this.price = jsonObject.getBigDecimal("price");
-		if (jsonObject.has("alt_mod_price") && !jsonObject.get("alt_mod_price").toString().equals("null")) {
-			System.out.println(jsonObject.get("alt_mod_price"));
-			System.out.println(jsonObject);
-		}
 		this.altModPrice = jsonObject.optBigDecimal("alt_mod_price", null);
 		this.sortOrder = jsonObject.getInt("sort_order");
 		this.available = jsonObject.getBoolean("available");
